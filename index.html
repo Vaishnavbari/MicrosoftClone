@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+</style>
+<body>
+<!-- Navbar -->
+<nav class="w-full flex justify-between px-4 xl:px-32">
+    <div class="menu flex gap-3 items-center p-3 lg:hidden">
+        <i class="fa-solid fa-bars fa-rotate-180 fa-2x"></i>
+        <i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
+    </div>
+    <div class="logo p-3 w-36">
+        <img src="images/logo.png" class="w-fit" alt="logo">
+    </div>
+    <div class="items space-x-4 p-3 font-sans hidden lg:block" >
+            <span class="text-sm">Microsoft 365</span>
+            <span class="text-sm">Teams</span>
+            
+            <span  class="text-sm">Copilot</span>
+
+            <span class="text-sm">Windows</span>
+            <span class="text-sm">
+            <label for="">More</label> 
+
+            <select name="more" id="">
+                More
+            </select>  
+            </span>         
+
+    </div>
+    <div class="account flex  gap-3 items-center p-3 md:gap-10">
+            <div class="dropdown hidden lg:block">
+                <label for="">All Microsoft</label> 
+                <select name="more" id="">
+                    More
+                </select> 
+            </div>
+            <div class="search flex gap-1 ">
+            <label for="" class="hidden md:block" >Search</label>
+            <i class="fa-solid fa-magnifying-glass fa-rotate-90 hidden md:block"></i>
+            </div>
+            <div class="cart flex gap-1">
+                <label for="" class="hidden md:block">Cart</label>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="signin flex gap-1" >
+                <label for="" class="hidden md:block">Sign in</label>
+            <i class="fa-solid fa-user"></i> 
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+ <!-- header -->
+<div class="w-full flex flex-col xl:relative">
+    <div class="image object-fit xl:w-full">
+        <img src="images/bg.avif" alt="image" class="w-full h-full xl:hidden">
+        <img src="images/computer.avif" alt="" class="w-full h-full hidden xl:inline">
+    </div>
+
+    <div class="content w-full bg-white shadow-2xl flex flex-col gap-4 px-6 py-6  xl:w-1/3 xl:h-fit xl:absolute xl:top-16 xl:left-28" >
+            <button class="w-fit px-3 font-bold" style="background-color:rgb(255,185,0) ;">
+                New
+            </button>
+            <h1 class=" text-2xl font-bold md:text-4xl">
+                Meet Surface pro 
+            </h1>
+            <span>
+                Unlock AI features like Live Captions and Cocreator with this exceptionally powerful laptop.
+            </span>
+            <button class=" w-fit px-4 py-2 text-white font-bold"  style="background-color: rgb(0,103,184)">
+                Learn More
+            </button>
+        </div>
+
+</div>
+<!-- header end -->
+
+<!-- navigation icon -->
+<div class="w-full flex items-center p-6 gap-7 justify-center">
+<i class="fa-solid fa-pause fa-1x"></i>
+<i class="fa-solid fa-circle fa-xs"></i>
+<i class="fa-solid fa-circle fa-xs"></i>
+<i class="fa-solid fa-arrow-left fa-1x"></i>
+<i class="fa-solid fa-arrow-right fa-1x"></i>
+</div>
+<!-- navigation icon end -->
+
+<!-- links -->
+<div class="w-full flex flex-col gap-3 p-6 md:flex-row flex-wrap items-center justify-center ">
+<div class="logo flex flex-col gap-2 ">
+    <img src="images/micosoft.svg" class="h-10" alt="logo">
+    <a href="#" class="text-blue-700 underline"> Choose your Microsoft 365</a>
+</div>
+<div class="logo flex flex-col gap-2 ">
+    <img src="images/shop.svg" class="h-10" alt="logo">
+    <a href="#" class="text-blue-700 underline"> Choose your Microsoft 365</a>
+</div>
+<div class="logo flex flex-col gap-2 ">
+    <img src="images/micosoft.svg" class="h-10" alt="logo">
+    <a href="#" class="text-blue-700 underline"> Choose your Microsoft 365</a>
+</div>
+<div class="logo flex flex-col gap-2 ">
+    <img src="images/europe.svg" class="h-10" alt="logo">
+    <a href="#" class="text-blue-700 underline"> Choose your Microsoft 365</a>
+</div>
+</div>
+<!-- links end  -->
+<!-- cart -->
+<!-- Cart Section -->
+<div class="w-full grid grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-4 lg:p-14 lg:px-14 xl:px-32">
+    <!-- First Item -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden sm:w-full">
+        <div class="image">
+            <img src="images/cart.avif" class="object-cover w-full" alt="cart">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+            <h1 class="text-2xl font-semibold">Maximise the everyday with Microsoft 365</h1>
+            <p class="text-gray-600">
+                Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.
+            </p>
+            <div class="flex items-center gap-3">
+                <button class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition">
+                    For one person
+                </button>
+                <!-- <a href="#" class="text-blue-700 hover:underline">for up to 6 people ></a> -->
+            </div>
+        </div>
+     </div>
+
+    <!-- Second Item -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="image">
+            <img src="images/poweranger.avif" class="object-cover w-full" alt="cart">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+            <h1 class="text-2xl font-semibold">Maximise the everyday with Microsoft 365</h1>
+            <p class="text-gray-600">
+                Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.
+            </p>
+            <div class="flex items-center gap-3">
+                <button class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition">
+                    For one person
+                </button>
+                <!-- <a href="#" class="text-blue-700 hover:underline">for up to 6 people ></a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Item -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="image">
+            <img src="images/cpu.avif" class="object-cover w-full" alt="cart">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+            <h1 class="text-2xl font-semibold">Maximise the everyday with Microsoft 365</h1>
+            <p class="text-gray-600">
+                Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.
+            </p>
+            <div class="flex items-center gap-3">
+                <button class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition">
+                    For one person
+                </button>
+                <!-- <a href="#" class="text-blue-700 hover:underline">for up to 6 people ></a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourth Item -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="image">
+            <img src="images/design.avif" class="object-cover w-full" alt="cart">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+            <h1 class="text-2xl font-semibold">Maximise the everyday with Microsoft 365</h1>
+            <p class="text-gray-600">
+                Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.
+            </p>
+            <div class="flex items-center gap-3">
+                <button class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition">
+                    For one person
+                </button>
+                <!-- <a href="#" class="text-blue-700 hover:underline">for up to 6 people ></a> -->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- main content -->
+<div class="w-full pt-7 lg:px-10 xl:px-32 lg:relative">
+    <img src="images/mobileimage.avif"  class="object-cover w-full lg:hidden"   alt=""> 
+    <img src="images/desktop-mobile.avif"  class="object-cover w-full hidden lg:inline"   alt="">
+    <div class="content w-full bg-white gap-4 sm:hidden md:hidden flex flex-col px-6 py-6  lg:w-1/4  xl:flex lg:flex lg:absolute xl:top-14 2xl:top-32 xl:left-40 lg:top-16 lg:left-28" style="background-color: rgb(213,211,233)" >
+        
+        <h1 class="text-2xl font-bold xl:text-4xl">
+            Unlock your potential with Microsoft Copilot
+        </h1>
+        <span>
+            Unlock AI features like Live Captions and Cocreator with this exceptionally powerful laptop.
+        </span>
+        <button class=" w-fit px-2 py-1 text-white font-bold"  style="background-color: rgb(0,103,184)">
+            Download the colipit app
+        </button>
+    </div>
+
+</div>
+</div>
+<!-- end main content -->
+
+<!-- Cart Section -->
+ <!-- header -->
+<div class="bg-white heading pt-7 ">
+<h1 class="text-2xl md:text-3xl font-semibold text-black  pt-7 lg:px-16 xl:px-32">For business</h1>
+</div>
+<!-- end header -->
+<div class="w-full grid grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-4 lg:p-10 lg:px-16 xl:px-32">
+    <!-- First Item -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden sm:w-full">
+        <div class="image">
+            <img src="images/surfacebuiness.avif" class="object-cover w-full" alt="cart">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+            <h1 class="text-2xl font-semibold">Maximise the everyday with Microsoft 365</h1>
+            <p class="text-gray-600">
+                Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.
+            </p>
+            <div class="flex items-center gap-3">
+                <button class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition">
+                    For one person
+                </button>
+                <!-- <a href="#" class="text-blue-700 hover:underline">for up to 6 people ></a> -->
+            </div>
+        </div>
+     </div>
+
+    <!-- Second Item -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="image">
+            <img src="images/dekstop.avif" class="object-cover w-full" alt="cart">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+            <h1 class="text-2xl font-semibold">Maximise the everyday with Microsoft 365</h1>
+            <p class="text-gray-600">
+                Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.
+            </p>
+            <div class="flex items-center gap-3">
+                <button class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition">
+                    For one person
+                </button>
+                <!-- <a href="#" class="text-blue-700 hover:underline">for up to 6 people ></a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Item -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="image">
+            <img src="images/flowe.jpeg" class="object-cover w-full" alt="cart">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+            <h1 class="text-2xl font-semibold">Maximise the everyday with Microsoft 365</h1>
+            <p class="text-gray-600">
+                Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.
+            </p>
+            <div class="flex items-center gap-3">
+                <button class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition">
+                    For one person
+                </button>
+                <!-- <a href="#" class="text-blue-700 hover:underline">for up to 6 people ></a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourth Item -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="image">
+            <img src="images/visual studio.avif" class="object-cover w-full" alt="cart">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+            <h1 class="text-2xl font-semibold">Maximise the everyday with Microsoft 365</h1>
+            <p class="text-gray-600">
+                Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.
+            </p>
+            <div class="flex items-center gap-3">
+                <button class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition">
+                    For one person
+                </button>
+                <!-- <a href="#" class="text-blue-700 hover:underline">for up to 6 people ></a> -->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- social media  -->
+<div class="w-full flex gap-2 m-3 items-center lg:p-6 lg:px-16 xl:px-32">
+    <div class="w-fit">
+        <a href="#" class="text-black hover:underline">Follow Microsoft</a>
+    </div>
+    <div class="facbook w-8">
+        <img src="images/facbook.avif" class="w-full object-cover" alt="">
+    </div>
+    <div class="facbook w-8">
+        <img src="images/icon-MSCOM-X-64x64.webp" class="w-full" alt="">
+    </div>
+    <div class="facbook w-8">
+        <img src="images/youtube.webp" class="w-full" alt="">
+    </div>
+ </div>
+<!-- end social media  -->
+
+<!-- Back to top button -->
+<div class="w-full flex gap-2 p-3 items-center justify-end pr-8 ">
+    <a href="#">
+    <button class="w-fit px-4 py-3 flex items-center gap-2 bg-[rgb(242,242,242);] hover:bg-white" >
+        <i class="fas fa-arrow-up"></i>
+        <span>
+        Back to top
+      </span>
+    </button>
+</a>
+ </div>
+ <!-- end back top  -->
+
+<!-- footer -->
+<div class="w-full grid grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-3 lg:p-16" style="background-color: rgb(242,242,242);">
+<div class="w-fit flex flex-col p-4">
+    <span class="text-xl">
+        Whats new 
+    </span>
+    <a href="#" class="text-black hover:underline" >Surface Pro</a>
+    <a href="#" class="text-black hover:underline">Surface Laptop</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+</div>
+<!-- second -->
+<div class="w-fit flex flex-col p-4">
+    <span class="text-xl">
+        Whats new 
+    </span>
+    <a href="#" class="text-black hover:underline" >Surface Pro</a>
+    <a href="#" class="text-black hover:underline">Surface Laptop</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+</div>
+<!-- third -->
+<div class="w-fit flex flex-col p-4">
+    <span class="text-xl">
+        Whats new 
+    </span>
+    <a href="#" class="text-black hover:underline" >Surface Pro</a>
+    <a href="#" class="text-black hover:underline">Surface Laptop</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+</div>
+<!-- fourth -->
+<div class="w-fit flex flex-col p-4">
+    <span class="text-xl">
+        Whats new 
+    </span>
+    <a href="#" class="text-black hover:underline" >Surface Pro</a>
+    <a href="#" class="text-black hover:underline">Surface Laptop</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+</div>
+<!-- fifth -->
+<div class="w-fit flex flex-col p-4">
+    <span class="text-xl">
+        Whats new 
+    </span>
+    <a href="#" class="text-black hover:underline" >Surface Pro</a>
+    <a href="#" class="text-black hover:underline">Surface Laptop</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+</div>
+<!-- sixth -->
+<div class="w-fit flex flex-col p-4">
+    <span class="text-xl">
+        Whats new 
+    </span>
+    <a href="#" class="text-black hover:underline" >Surface Pro</a>
+    <a href="#" class="text-black hover:underline">Surface Laptop</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+    <a href="#" class="text-black hover:underline">Surface Book</a>
+</div>
+</div>
+
+
+    
+</body>
+</html>
+
